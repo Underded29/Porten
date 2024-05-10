@@ -1,13 +1,20 @@
 $font_title: 'Post No Bills Jaffna', sans-serif;
+$font_default: "PT Sans", sans-serif;
+$font_card: "Playfair Display", serif;
+$color_default: #FFFFFF;
 
 *{
-    outline: 1px solid tomato;
+    // outline: 1px solid tomato;
 }
-body{
+body, h1, h2, h3, h4, p, ul[class], ol[class], li{
     margin: 0;
     padding: 0;
+}
+body{
+    font-family: $font_default;
     width: 100%;
     box-sizing: border-box;
+    color: $color_default;
 }
 img {
     max-width: 100%;
@@ -21,13 +28,16 @@ a{
 }
 .headerFirst, .headerSecond{
     align-items: center;
-    padding: 0px 405px;
+    padding: 0px 204px;
     justify-content: space-between;
 }
 .headerFirst{
     height: 44px;
     font-size: 12px;
     background-color: #000000;
+    color: #969696;
+}
+.headerFirst_sign a{
     color: #969696;
 }
 header img{
@@ -38,10 +48,12 @@ header img{
     height: 80px;
     background-color: #0f0f0f;
 }
-.headerSecond h1{
+.headerSecond_title{
     font-size: 36px;
+}
+.title{
     font-family: $font_title;
-    color: #FFFFFF;
+    color: $color_default;
 }
 .headerFirst_schedule, .headerFirst_sign{
     align-items: center;
@@ -55,4 +67,146 @@ header img{
     width: 1px;
     height: 12px;
     background-color: #969696;
+}
+hr{
+    width: 100px;
+    height: 1px;
+    color: $color_default;
+}
+.menu_button{
+    font-family: $font_default;
+    display: inline-block;
+    padding: 30px 20px;
+    color: #969696;
+}
+.menu_button:hover{
+    background-color: #1F1F1F;
+    color: $color_default;
+}
+.FirstBlock{
+    font-family: $font_default;
+    display: inline-block;
+    position: relative;
+    height: 720px;
+    width: 100%;
+    background-image: url(../assets/gggggg.jpg);
+    background-size: 100% auto;
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: auto;
+}
+.FirstBlock_text{
+    position: relative;
+    z-index: auto;
+    text-align: center;
+    color: $color_default;
+    margin: 160px 400px;
+    width: 730px;
+}
+.FirstBlock_border{
+    justify-content: center;
+    align-items: center;
+    // box-sizing: border-box;
+    margin: 0 auto;
+    width: 280px;
+    height: 280px;
+    border: 4px $color_default solid;
+}
+.FirstBlock_blockTitle{
+    display: inline-block;
+}
+.FirstBlock_blockTitle h3{
+    font-weight: 400;
+}
+.FirstBlock_blockTitle hr{
+    width: 80%;
+}
+.FirstBlock_title{
+    font-size: 48px;
+}
+.FirstBlock_about{
+    margin-top: 100px;
+}
+.SecondBlock{
+    height: 710px;
+    width: 100%;
+    display: inline-block;
+    background-color: #000000;
+}
+.SecondBlock_firstRow{
+    display: grid;
+    grid-template-columns: 7fr 6fr;
+}
+.SecondBlock_sesson{
+    font-family: $font_card;
+    padding: 50px 30px;
+}
+.card{
+    width: 200px;
+    height: 320px;
+}
+.card:hover{
+    border: 1px solid #969696;
+}
+.card_photo{
+    justify-content: center;
+    align-items: center;
+    background-color: #191B1C;
+    width: 100%;
+    height: 240px;
+}
+.card_name {
+    font-size: 16px;
+    font-weight: 400;
+}
+.card_price {
+    font-size: 14px;
+    font-weight: 700;
+}
+.card :not(:first-child){
+    margin-top: 16px;
+}
+.SecondBlock_blockCards{
+    display: flex;
+    justify-content: space-between;
+}
+.titleBlock {
+    font-family: $font_card;
+    text-align: center;
+}
+.titleBlock :not(:first-child){
+    margin-top: 20px;
+}
+.SecondBlock_about > * {
+    margin-top: 30px;
+}
+.SecondBlock_colection {
+    position: relative;
+    // z-index: auto;
+    background-image: url(../assets/men_sits.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.SecondBlock_colection-text{
+    margin-top: 320px;
+    position: relative;
+    z-index: auto;
+}
+.button{
+    padding: 10px 30px;
+    display: inline-block;
+    color: $color_default;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: $font_default;
+    border: 1px solid $color_default;
 }
