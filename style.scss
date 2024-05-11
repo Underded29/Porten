@@ -3,6 +3,14 @@ $font_default: "PT Sans", sans-serif;
 $font_card: "Playfair Display", serif;
 $color_default: #FFFFFF;
 
+@mixin background-style ($url: ''){
+    background-image: $url;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 *{
     // outline: 1px solid tomato;
 }
@@ -80,19 +88,16 @@ hr{
     color: #969696;
 }
 .menu_button:hover{
+    transition: 0.3s ease;
     background-color: #1F1F1F;
     color: $color_default;
 }
 .FirstBlock{
+    @include background-style($url: url(../assets/gggggg.jpg));
     font-family: $font_default;
     display: inline-block;
-    position: relative;
     height: 720px;
     width: 100%;
-    background-image: url(../assets/gggggg.jpg);
-    background-size: 100% auto;
-    background-position: center ;
-    background-repeat: no-repeat;
 }
 .overlay {
     position: absolute;
@@ -108,7 +113,7 @@ hr{
     z-index: auto;
     text-align: center;
     color: $color_default;
-    margin: 160px 400px;
+    margin: 160px auto;
     width: 730px;
 }
 .FirstBlock_border{
@@ -136,7 +141,7 @@ hr{
     margin-top: 100px;
 }
 .SecondBlock{
-    height: 710px;
+    height: 1000px;
     width: 100%;
     display: inline-block;
     background-color: #000000;
@@ -144,6 +149,8 @@ hr{
 .SecondBlock_firstRow{
     display: grid;
     grid-template-columns: 7fr 6fr;
+    height: 50%;
+    width: 100%;
 }
 .SecondBlock_sesson{
     font-family: $font_card;
@@ -152,6 +159,8 @@ hr{
 .card{
     width: 200px;
     height: 320px;
+    border: 1px solid transparent;
+    transition: border 0.3s ease;
 }
 .card:hover{
     border: 1px solid #969696;
@@ -185,21 +194,20 @@ hr{
 .titleBlock :not(:first-child){
     margin-top: 20px;
 }
-.SecondBlock_about > * {
-    margin-top: 30px;
+.titleBlock :last-child{
+    margin-bottom: 20px;
 }
 .SecondBlock_colection {
-    position: relative;
-    // z-index: auto;
-    background-image: url(../assets/men_sits.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    @include background-style($url: url(../assets/men_sits.jpg));
 }
 .SecondBlock_colection-text{
     margin-top: 320px;
     position: relative;
     z-index: auto;
+}
+.SecondBlock_colection-text h2{
+    font-size: 30px;
+    font-weight: 700;
 }
 .button{
     padding: 10px 30px;
@@ -209,4 +217,29 @@ hr{
     font-weight: 400;
     font-family: $font_default;
     border: 1px solid $color_default;
+}
+.SecondBlock_photo{
+    @include background-style($url: url(../assets/white_black_photo.jpg));
+}
+.SecondBlock_SecondRow{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 6fr 7fr;
+}
+.SecondBlock_about2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SecondBlock_about-text{
+    width: 620px;
+}
+.SecondBlock_about-text p{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.SecondBlock_about-text h2{
+    font-weight: 400;
+    font-size: 30px;
 }
