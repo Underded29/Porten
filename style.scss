@@ -12,7 +12,7 @@ $color_default: #FFFFFF;
 }
 
 *{
-    // outline: 1px solid tomato;
+    outline: 1px solid tomato;
 }
 body, h1, h2, h3, h4, p, ul[class], ol[class], li{
     margin: 0;
@@ -232,14 +232,14 @@ hr{
     transition: .5s;
     transform: scale(1.1);
 }
-.SecondBlock_photo{
-    @include background-style($url: url(../assets/white_black_photo.jpg));
-}
-.SecondBlock_SecondRow{
+.SecondBlock_SecondRow {
     display: grid;
     grid-template-columns: 6fr 7fr;
     width: 100%;
     height: 50%;
+}
+.SecondBlock_photo{
+    @include background-style($url: url(../assets/white_black_photo.jpg));
 }
 .SecondBlock_about2{
     justify-content: center;
@@ -379,9 +379,6 @@ hr{
 .footerOverlay{
     background-color: rgba(0, 0, 0, 0.8);
 }
-.FooterBlock_content :not(:last-child){
-    // margin-right: 20px;
-}
 .FooterBlock_Categoies > *{
     margin-top: 20px;
 }
@@ -452,4 +449,374 @@ footer{
 .Footer a{
     color: #D0D0D0;
     text-decoration: underline;
+}
+@media screen and (max-width: 1024px){
+    .headerFirst, .headerSecond{
+        padding: 0px 102px;
+    }
+    .headerFirst{
+        height: 38px;
+    }
+    .headerSecond{
+        height: 65px;
+    }
+    .headerSecond_title{
+        font-size: 32px;
+    }
+    .headerFirst_schedule, .headerFirst_sign{
+        height: 14px;
+    }
+    .menu_button{
+        padding: 22px 10px;
+    }
+    .FirstBlock{
+        height: 620px;
+    }
+    .FirstBlock_text{
+        margin: 80px auto;
+        width: 600px;
+    }
+    .FirstBlock_border{
+        width: 240px;
+        height: 240px;
+    }
+    .FirstBlock_title{
+        font-size: 42px;
+    }
+    .FirstBlock_blockTitle h3 {
+        font-size: 18px;
+    }
+    .SecondBlock{
+        height: 800px;
+    }
+    .card {
+        width: 150px;
+        height: 280px;
+    }
+    .card_photo {
+        width: 100%;
+        height: 180px;
+    }
+    .SecondBlock_firstRow{
+        box-sizing: border-box;
+        grid-template-columns: 8fr 6fr;
+    }
+    .SecondBlock_colection{
+        height: 100%;
+    }
+    .titleBlock :not(:first-child) {
+        margin-top: 20px;
+    }
+    .titleBlock :last-child{
+        margin-bottom: 0px;
+    }
+    .titleBlock h2{
+        font-size: 24px;
+    }
+    .SecondBlock_sesson{
+        padding: 30px 15px;
+    }
+    .SecondBlock_colection-text{
+        margin-top: 240px;
+    }
+    .button{
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+    .SecondBlock_about-text{
+        width: 480px;
+    }
+    .SecondBlock_about-text p{
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .ThirdBlock{
+        height: 800px;
+    }
+    .ThirdBlock_about{
+        width: 65%;
+    }
+    .FourthBlock{
+        height: 1050px;
+    }
+    .Article{
+        margin-top: 30px;
+        height: 280px;
+    }
+    .textArticle p{
+        font-size: 12px;
+    }
+    .titleArticle{
+        font-size: 18px;
+    } 
+    .textArticle{
+        width: 400px;
+    }
+    .buttonBlockArticle{
+        margin-top: 20px;
+    }
+    .tagsArticle{
+        font-size: 14px;
+    }
+    .Pre-FooterBlock{
+        height: 280px;
+    }
+    .Pre-FooterBlock_blockIcons{
+        padding: 0 50px;
+        margin-top: 50px;
+    }
+    .Pre-FooterBlock_logo{
+        height: 100px;
+    }
+    .FooterBlock{
+        height: 400px;
+    }
+    .FooterBlock p{
+        font-size: 12px;
+    }
+    .footerTitle{
+        font-size: 24px;
+    }
+    .category{
+        padding: 10px 10px;
+    }
+    .mailForm{
+        height: 40px;
+    }
+    .FooterBlock_content{
+        width: 85%;
+    }
+    .footerContentBlock{
+        height: 290px;
+        width: 270px;
+    }
+    .footerContentBlock > *{
+        margin-bottom: 20px;
+    }
+    .Footer{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .headerFirst,
+    .headerSecond {
+        padding: 0px 50px;
+    }
+    .headerFirst {
+        height: 38px;
+    }
+    .headerSecond {
+        height: 65px;
+    }
+    .headerSecond_title {
+        font-size: 32px;
+    }
+    .headerFirst_schedule,
+    .headerFirst_sign {
+        height: 16px;
+    }
+    .menu_button {
+        padding: 22px 10px;
+    }
+    .FirstBlock {
+        height: 540px;
+    }
+    .FirstBlock_text {
+        margin: 40px auto;
+        width: 500px;
+    }
+    .FirstBlock_border {
+        width: 240px;
+        height: 240px;
+    }
+    .FirstBlock_title {
+        font-size: 42px;
+    }
+    .FirstBlock_about{
+        margin-top: 60px;
+    }
+    .FirstBlock_blockTitle h3 {
+        font-size: 16px;
+    }
+    .SecondBlock {
+        height: 1900px;
+    }
+    .SecondBlock_firstRow{
+        box-sizing: border-box;
+        height: 50%;
+        display: block;
+    }
+    .SecondBlock_colection{
+        height: 500px;
+    }
+    .SecondBlock_blockCards{
+        justify-content: space-between;
+    }
+    .SecondBlock_about{
+        margin: 0 auto;
+        width: 90%;
+        height: 100%;
+    }
+    .card {
+        width: 200px;
+        height: 320px;
+    }
+    .card_photo {
+        width: 100%;
+        height: 240px;
+    }
+    .titleBlock :not(:first-child) {
+        margin-top: 20px;
+    }
+    .titleBlock :last-child {
+        margin-bottom: 20px;
+    }
+    .titleBlock h2 {
+        font-size: 24px;
+    }
+    .SecondBlock_sesson {
+        padding: 30px 15px;
+    }
+    .SecondBlock_colection-text {
+        margin-top: 200px;
+    }
+    .SecondBlock_colection{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: top center;
+        height: 480px;
+    }
+    .button {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+    .SecondBlock_SecondRow{
+        flex-direction: column;
+        display: flex;
+        height: 50%;
+    }
+    .SecondBlock_photo{
+        margin-top: 50px;
+        order: 2;
+        height: 400px;
+    }
+    .SecondBlock_about-text {
+        margin-top: 50px;
+        order: 1;
+        width: 650px;
+    }
+    .SecondBlock_about-text p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .SecondBlock_about-button{
+        padding: 30px 90px;
+        font-size: 24px;
+    }
+    .ThirdBlock {
+        height: 800px;
+    }
+    .ThirdBlock_about {
+        width: 90%;
+    }
+    .ThirdBlock_card{
+        width: 160px;
+        height: 280px;
+    }
+    .ThirdBlock_card .card_photo{
+        height: 200px;
+    }
+    .FourthBlock {
+        height: 2100px;
+    }
+    .Article {
+        display: block;
+        margin-top: 30px;
+        height: 630px;
+    }
+    .FourthBlock_photoArticle{
+        margin: 0 auto;
+        width: 85%;
+        height: 300px;
+    }
+    .textArticle {
+        width: 70%;
+        margin-top: 50px;
+    }
+    .textArticle p {
+        font-size: 16px;
+    }
+    .titleArticle {
+        font-size: 26px;
+    }
+    .buttonBlockArticle {
+        margin-top: 20px;
+    }
+    .tagsArticle {
+        font-size: 18px;
+    }
+    .Pre-FooterBlock {
+        height: 260px;
+    }
+    .Pre-FooterBlock_blockIcons {
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+    .Pre-FooterBlock_logo {
+        height: 74px;
+    }
+    .FooterBlock {
+        height: 860px;
+    }
+    .FooterBlock p {
+        font-size: 16px;
+    }
+    .footerTitle {
+        font-size: 28px;
+    }
+    .category {
+        padding: 15px 40px;
+        font-size: 22px;
+    }
+    .FooterBlock_about p{
+        margin-bottom: 0;
+    }
+    .FooterBlock_about{
+        margin-top: 40px;
+    }
+    .mailForm {
+        height: 40px;
+    }
+    .FooterBlock_content {
+        display: block;
+        width: 80%;
+    }
+    .footerContentBlock {
+        height: 240px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .FooterBlock_blockCategories {
+        height: 300px;
+    }
+    .FooterBlock_mail{
+        margin-bottom: 0;
+        height: 240px;
+    }
+    .Footer {
+        width: 80%;
+    }
+    .mailForm input[type=email]{
+        font-size: 16px;
+    }
+    .mailForm{
+        height: 60px;
+    }
+}
+@media screen and (max-width: 365px) {
+    body{
+        width: 100%;
+    }
 }
