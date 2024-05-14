@@ -407,7 +407,8 @@ hr{
     text-align: center;
 }
 .mailForm input[type=email]{
-    color: $color_default;
+    font-size: 16px;
+    color: #000000;
     width: 60%;
     height: 89%;
     padding-left: 15px;
